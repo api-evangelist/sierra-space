@@ -1,0 +1,110 @@
+generated: '2026-07-31'
+method: probed
+source: live HTTPS probes of the Sierra Space corporate host
+host: https://www.sierraspace.com
+found: 0
+summary: >-
+  No RFC 8615 well-known discovery documents are published. Every /.well-known/*
+  path on www.sierraspace.com returns a genuine HTTP 404 (the server handles the
+  /.well-known/ prefix correctly, so these are meaningful negatives rather than a
+  routing artifact). The apex host sierraspace.com is fronted by a Sucuri WAF that
+  answers 403 to these probes; www is the canonical host per the provider's own
+  llms.txt and sitemap.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+apex_host_note:
+  host: https://sierraspace.com
+  status: 403
+  reason: Sucuri WAF blocks direct /.well-known/* requests to the apex host
+ai_crawler_policy:
+  source: https://www.sierraspace.com/robots.txt
+  fetched: '2026-07-31'
+  http_status: 200
+  note: >-
+    Not a well-known document, recorded here because it is the only machine-readable
+    agent-access policy Sierra Space publishes. The robots.txt states its goal as
+    keeping search and AI retrieval open while blocking model-training crawlers.
+  disallowed_training_agents:
+  - GPTBot
+  - ClaudeBot
+  - Google-Extended
+  - CCBot
+  - Applebot-Extended
+  allowed_retrieval_agents:
+  - OAI-SearchBot
+  - ChatGPT-User
+  - Claude-SearchBot
+  - Claude-User
+  - PerplexityBot
+  - Perplexity-User
+contract_discovery:
+  result: no-public-machine-readable-contract
+  note: >-
+    Full STEP 0b contract discovery was run and every probe missed. Sierra Space is a
+    spaceflight hardware and mission-systems manufacturer; it publishes no developer
+    portal, no API reference and no machine-readable API contract on any public host.
+  false_positives:
+    note: >-
+      www.sierraspace.com is a WordPress site that answers HTTP 200 with an HTML page
+      for ANY unmatched path. /openapi.json, /swagger.json and /api-docs all returned
+      200 with a <!DOCTYPE html> body, as did invented control paths such as /security/,
+      /trust/, /developers/, /api/ and /status/, none of which appear in the provider's
+      own sitemap. These 200s are soft-404s, not artifacts. The /.well-known/ prefix is
+      the exception - it returns genuine 404s.
+    paths:
+    - {path: /openapi.json, status: 200, body: html-soft-404}
+    - {path: /swagger.json, status: 200, body: html-soft-404}
+    - {path: /api-docs, status: 200, body: html-soft-404}
+  subdomain_enumeration:
+    method: DNS resolution of 30 common developer/API subdomain labels
+    resolved:
+    - host: api.sierraspace.com
+      address: 52.235.140.120
+      cloud: Microsoft Azure
+      tcp_443: filtered
+      tcp_80: filtered
+      note: >-
+        An api. record exists in DNS but the host is not publicly reachable - TCP 443
+        and 80 are closed/filtered from the public internet. This is an internal or
+        partner-gated gateway, not a public API surface. No contract can be probed.
+    not_resolved:
+    - developer.sierraspace.com
+    - docs.sierraspace.com
+    - status.sierraspace.com
+    - trust.sierraspace.com
+    - portal.sierraspace.com
+    - sandbox.sierraspace.com
+    - graphql.sierraspace.com
+    - mcp.sierraspace.com
+  github_org:
+    url: https://github.com/Sierra-Space
+    http_status: 200
+    public_repos: 0
+    note: >-
+      A GitHub organization named Sierra Space exists (created 2021-05-25) but publishes
+      zero public repositories and carries no verified domain, so no GitHubOrganization
+      pointer is wired - there is no public code surface behind it.
+  package_registries:
+    probed: [npm, PyPI]
+    result: no first-party client libraries found
+x-evidence:
+  fetched: '2026-07-31'
+  hosts_probed:
+  - www.sierraspace.com
+  - sierraspace.com
+  - api.sierraspace.com
+  - developer.sierraspace.com
+  - docs.sierraspace.com

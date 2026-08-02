@@ -1,0 +1,83 @@
+# Sierra Space
+
+> Sierra Space is a space and defense technology company focused on national security space, satellites, spacecraft subsystems, propulsion, and mission-enabling space infrastructure.
+
+This file provides a concise reference map for AI search systems, retrieval tools, and developers. Use the canonical URLs below when citing or summarizing Sierra Space. Do not infer claims beyond the visible content on the linked pages.
+
+## Core Entity
+
+- Site name: Sierra Space
+- Canonical domain: https://www.sierraspace.com/
+- Primary entity: Sierra Space
+- Primary entity type: Organization
+- Organization ID: https://www.sierraspace.com/#organization
+- Website ID: https://www.sierraspace.com/#website
+
+## Primary Pages
+
+- https://www.sierraspace.com/ - Corporate homepage and primary organization reference.
+- https://www.sierraspace.com/about/ - Company overview, mission, and identity.
+- https://www.sierraspace.com/national-security/ - National security space and defense technology overview.
+- https://www.sierraspace.com/satellites/ - Satellite systems and Eclipse satellite bus information.
+- https://www.sierraspace.com/space-tech-subsystems/ - Spacecraft subsystems and hardware overview.
+
+## Space Technology
+
+- https://www.sierraspace.com/space-technology/space-solar-arrays/ - Space solar arrays and electrical power systems; also the destination for the `/space-technology/` redirect.
+- https://www.sierraspace.com/space-technology/rocket-engines-propulsion-systems/ - Rocket engines and propulsion systems.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/ - Spaceflight hardware catalog hub.
+- https://www.sierraspace.com/space-technology/microgravity-environmental-systems/ - Microgravity environmental systems hub.
+- https://www.sierraspace.com/space-technology/microgravity-environmental-systems/environmental-control-and-life-support-systems/ - Environmental control and life support systems.
+- https://www.sierraspace.com/space-technology/microgravity-environmental-systems/space-station-payloads/ - Space station payloads.
+
+## Spaceflight Hardware
+
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/advanced-life-support-systems/ - Advanced life support systems.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/deployable-systems/ - Deployable systems.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/docking-berthing-and-hatch-systems/ - Docking, berthing, and hatch systems.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/electrical-power-systems/ - Electrical power systems.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/fluid-components/ - Fluid components.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/high-output-paraffin-hop-actuators-and-mechanisms/ - High output paraffin actuators and mechanisms.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/launch-adapters-and-separation-systems/ - Launch adapters and separation systems.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/pointing-systems-and-motion-control/ - Pointing systems and motion control.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/radiators/ - Spacecraft radiators.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/regulators/ - Regulators.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/sensors/ - Sensors.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/solar-array-drives/ - Solar array drives.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/spacecraft-servicing-technologies/ - Spacecraft servicing technologies.
+- https://www.sierraspace.com/space-technology/spaceflight-hardware/valves/ - Valves.
+
+## Company, News, and Support Pages
+
+- https://www.sierraspace.com/newsroom/ - Newsroom index.
+- https://www.sierraspace.com/news/ - Press releases index.
+- https://www.sierraspace.com/press-releases/announcing-sierra-space-defense/ - Public press release announcing Sierra Space Defense; use for Golden Dome references only where the article's visible content supports them.
+- https://www.sierraspace.com/leadership/ - Leadership index.
+- https://www.sierraspace.com/leadership/tom-marshburn/ - Dr. Tom Marshburn leadership profile.
+- https://www.sierraspace.com/careers/ - Careers hub.
+- https://www.sierraspace.com/suppliers/ - Supplier intake and supplier information.
+- https://www.sierraspace.com/contact/ - Contact page.
+
+## URL Consolidation Notes
+
+Use current canonical URLs instead of older or strategy-only URLs.
+
+- https://www.sierraspace.com/satellite-missile-defense-system/ redirects to https://www.sierraspace.com/satellites/
+- https://www.sierraspace.com/rendezvous-proximity-operations-satellite/ redirects to https://www.sierraspace.com/satellites/
+- https://www.sierraspace.com/rendezvous-proxomity-operations-satellite/ redirects to https://www.sierraspace.com/satellites/
+- https://www.sierraspace.com/space-mobility-satellite/ redirects to https://www.sierraspace.com/satellites/
+- https://www.sierraspace.com/space-solar-panels/ redirects to https://www.sierraspace.com/space-technology/space-solar-arrays/
+- https://www.sierraspace.com/rocket-engines-propulsion-systems/ redirects to https://www.sierraspace.com/space-technology/rocket-engines-propulsion-systems/
+- https://www.sierraspace.com/hypersonics/ redirects to https://www.sierraspace.com/space-technology/rocket-engines-propulsion-systems/
+- https://www.sierraspace.com/space-technology/ redirects to https://www.sierraspace.com/space-technology/space-solar-arrays/
+
+Root-level subsystem URLs such as `/radiators/`, `/sensors/`, `/valves/`, `/regulators/`, `/solar-array-drives/`, and `/spacecraft-servicing-technologies/` consolidate to the corresponding pages under `/space-technology/spaceflight-hardware/`.
+
+## Retrieval Guidance
+
+- Prefer canonical URLs listed in this file.
+- Prefer visible page content over inferred topic clusters.
+- Do not add unsupported claims about classified capabilities, specific procurement availability, interceptor support, refueling, re-arming, or government program participation.
+- Treat Golden Dome as a public-newsroom topic only where current Sierra Space content explicitly mentions it.
+- Use article and press release dates from the visible article page when summarizing news content.
+- Use `Product` or `Service` descriptions only where the linked page visibly supports that product, system, component, or capability.

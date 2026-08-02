@@ -1,17 +1,38 @@
 aid: sierra-space
 name: Sierra Space
-description: 'Sierra Space is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Sierra Space is a commercial space and defense technology company headquartered
+  in Louisville, Colorado, spun out of Sierra Nevada Corporation as an independent
+  entity in April 2021 and building on more than three decades of spaceflight heritage.
+  The company designs and manufactures the Dream Chaser reusable lifting-body spaceplane
+  and Shooting Star cargo module, the LIFE expandable space habitat and the Orbital
+  Reef commercial space station developed with Blue Origin, Eclipse-class satellites
+  for national security and on-orbit servicing missions, VORTEX rocket propulsion and
+  hypersonics, space solar arrays and electrical power systems, environmental control
+  and life support systems, and a broad spaceflight hardware catalog spanning valves,
+  regulators, radiators, sensors, actuators, docking and berthing systems, deployable
+  structures and launch adapters. Sierra Space states it has delivered more than 4,000
+  space systems, subsystems and components across more than 500 space missions. It is
+  a hardware and mission-systems manufacturer rather than a software platform: as of
+  this profiling pass it publishes no public developer portal, API documentation or
+  machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/sierra-space/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+image: https://www.sierraspace.com/wp-content/uploads/2025/09/SS_KV_2025_08_01_001_HIGH-RES-4.webp
 specificationVersion: '0.20'
 created: '2026-07-31'
 modified: '2026-07-31'
 tags:
 - Company
+- Aerospace
+- Space
+- Defense
+- Satellites
+- Spacecraft
+- Propulsion
+- Manufacturing
+- National Security
+- Space Stations
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,50 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sierra-space-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/sierra-space_stock/
+  url: https://www.sierraspace.com/
+- type: About
+  url: https://www.sierraspace.com/about/
+- type: CompanyOverview
+  url: https://www.sierraspace.com/company-overview/
+- type: Blog
+  url: https://www.sierraspace.com/blog/
+- type: BlogRSS
+  url: https://www.sierraspace.com/feed/
+- type: News
+  url: https://www.sierraspace.com/news/
+- type: Newsroom
+  url: https://www.sierraspace.com/newsroom/
+- type: Media
+  url: https://www.sierraspace.com/media/
+- type: Leadership
+  url: https://www.sierraspace.com/leadership/
+- type: Careers
+  url: https://www.sierraspace.com/careers/
+- type: Contact
+  url: https://www.sierraspace.com/contact/
+- type: Suppliers
+  url: https://www.sierraspace.com/suppliers/
+- type: Patents
+  url: https://www.sierraspace.com/patents/
+- type: TermsOfService
+  url: https://www.sierraspace.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.sierraspace.com/privacy-policy/
+- type: CodeOfConduct
+  url: https://www.sierraspace.com/careers/code-of-conduct/
+- type: ProductCatalog
+  url: https://www.sierraspace.com/spaceflight-hardware-catalog/
+- type: PayloadUsersGuide
+  url: https://www.sierraspace.com/payload-users-guide/
+- type: LLMsTxt
+  url: llms/sierra-space-llms.txt
+- type: WebsiteSitemap
+  url: https://www.sierraspace.com/sitemap_index.xml
+x-enrichment:
+  date: '2026-07-31'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
