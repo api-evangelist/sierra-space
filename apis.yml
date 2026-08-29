@@ -18,6 +18,17 @@ description: 'Sierra Space is a commercial space and defense technology company 
 url: https://raw.githubusercontent.com/api-evangelist/sierra-space/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.sierraspace.com/wp-content/uploads/2025/09/SS_KV_2025_08_01_001_HIGH-RES-4.webp
 specificationVersion: '0.23'
 created: '2026-07-31'
